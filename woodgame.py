@@ -1,13 +1,18 @@
-x = input("Choose Left or Right to get out of wood: ")
+x = input("To get out of the wood, would you go Left or Right? ")
 count = 0
-while count <= 1:
+
+while count <=2:
     if x == "Right":
-        x = input("Choose again Left or Right to get out of the wood: ")
         count+=1
-        if count > 1:
-            print("You lose")
+        x = input("Which one again? ")
+        if count > 3:
+            print("You Lose")
     elif x == "Left":
-        print("You got out of the wood")
+        print("You Got Out of The Wood")
         break
-        
+else:
+    if x == "Left":
+        print("You Got Out of The Wood")
+    else:
+        print("You Lose")        
     
