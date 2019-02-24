@@ -1,6 +1,5 @@
 x = input("To get out of the wood, would you go Left or Right? ")
 count = 0
-
 while count <=2:
     if x == "Right":
         count+=1
